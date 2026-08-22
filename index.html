@@ -325,7 +325,29 @@ footer {
 }
 
 /* RESPONSIVE */
+.mobile-ad {
+    display: none;
+    text-align: center;
+    margin: 25px 0;
+}
 
+.desktop-ad {
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+
+    .desktop-ad {
+        display: none;
+    }
+
+    .mobile-ad {
+        display: block;
+    }
+
+}
 @media (max-width: 850px) {
 
     .layout {
@@ -812,24 +834,38 @@ footer {
 
 
     
-<!-- DUŻA REKLAMA -->
+<!--<!-- REKLAMA KOMPUTER / TELEFON -->
 
-<script>
-  atOptions = {
-    'key' : 'f9bd09ccc657c755f56fe968e3819b42',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/f9bd09ccc657c755f56fe968e3819b42/invoke.js"></script>
+<div class="responsive-ad desktop-ad">
+
+    <script>
+      atOptions = {
+        'key' : 'f9bd09ccc657c755f56fe968e3819b42',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/f9bd09ccc657c755f56fe968e3819b42/invoke.js"></script>
 
 </div>
 
 
-<footer id="o-nas">
+<div class="responsive-ad mobile-ad">
 
+    <script>
+      atOptions = {
+        'key' : '16f6c9f8731f0628d6fa425ccca9fcc3',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/16f6c9f8731f0628d6fa425ccca9fcc3/invoke.js"></script>
+
+</div>
         <h2>🌍 Ciekawostki Świata</h2>
 
         <p>
