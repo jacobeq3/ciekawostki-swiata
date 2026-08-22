@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Ciekawostki Świata – niezwykłe fakty, ciekawostki o krajach, kosmosie, zwierzętach, historii i nauce.">
+<meta name="keywords" content="ciekawostki, ciekawostki świata, fakty, interesujące fakty, wiedza, kosmos, historia, nauka">
+<meta name="author" content="Ciekawostki Świata">
+<meta name="google-site-verification" content="fKAecf8rGr3G6OqnsmXW1k76B77rRi1lW2pHFu8_VXM">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://jacobeq3.github.io/ciekawostki-swiata/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ciekawostki Świata – niezwykłe fakty i ciekawostki">
+<meta property="og:description" content="Poznaj niezwykłe fakty o świecie, kosmosie, zwierzętach, historii, nauce i człowieku.">
+<meta property="og:url" content="https://jacobeq3.github.io/ciekawostki-swiata/">
+<meta name="twitter:card" content="summary">
+
+<title>Ciekawostki Świata – Niezwykłe fakty i ciekawostki</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 60px 25px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,.07);
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 58px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #64748b;
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* SEARCH */
+
+.search {
+    max-width: 650px;
+    margin: 28px auto 0;
+    display: flex;
+}
+
+.search input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: #2563eb;
+}
+
+.search button {
+    padding: 15px 22px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search button:hover {
+    background: #1d4ed8;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* REKLAMA */
+
+.ad {
+    min-height: 110px;
+    border: 2px dashed #cbd5e1;
+    background: #e8edf3;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    margin: 25px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.ad span {
+    font-size: 13px;
+}
+
+/* CATEGORIES */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.category {
+    border: none;
+    padding: 10px 17px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.category:hover,
+.category.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* LAYOUT */
+
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+/* ARTICLES */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-category {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+}
+
+.fact {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-box {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.sidebar-box h3 {
+    margin-bottom: 12px;
+}
+
+.sidebar-box ul {
+    list-style: none;
+}
+
+.sidebar-box li {
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-box li:last-child {
+    border-bottom: none;
+}
+
+/* BRAK WYNIKÓW */
+
+.no-results {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    display: none;
+}
+
+.no-results h2 {
+    margin-bottom: 10px;
+}
+
+/* STOPKA */
+
+footer {
+    margin-top: 60px;
+    background: #111827;
+    color: #cbd5e1;
+    padding: 40px 20px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-inner h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* RESPONSIVE */
+.mobile-ad {
+    display: none;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.desktop-ad {
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+
+    .desktop-ad {
+        display: none;
+    }
+
+    .mobile-ad {
+        display: block;
+    }
+
+}
+@media (max-width: 850px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .hero {
+        margin: 20px 15px;
+        padding: 45px 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    .search button {
+        border-radius: 10px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+}
+.read-more{display:inline-block;margin-top:14px;color:#1d4ed8;font-weight:700;text-decoration:none}.read-more:hover{text-decoration:underline}.source{font-size:14px;color:#64748b}.article-page{max-width:850px;margin:35px auto;padding:0 20px}.article-box{background:#fff;border-radius:18px;padding:30px;box-shadow:0 5px 20px rgba(0,0,0,.06)}.article-box h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin-bottom:16px}.article-box h2{margin-top:28px;margin-bottom:10px}.article-box p{margin:12px 0}.back{display:inline-block;margin-bottom:20px;color:#1d4ed8;font-weight:700;text-decoration:none}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Ciekawostki Świata",
+  "url":"https://jacobeq3.github.io/ciekawostki-swiata/",
+  "description":"Niezwykłe fakty i ciekawostki o świecie, nauce, kosmosie, historii i zwierzętach.",
+  "inLanguage":"pl-PL"
+}
+</script>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">🌍 Ciekawostki Świata</div>
+
+        <nav>
+            <a href="#ciekawostki">Ciekawostki</a>
+            <a href="#o-nas">O stronie</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+
+    <h1>🌍 Ciekawostki Świata</h1>
+
+    <p>
+        Odkrywaj niezwykłe fakty o świecie, kosmosie, zwierzętach, historii, nauce i człowieku. Każda ciekawostka jest napisana krótko i konkretnie, żeby można było szybko dowiedzieć się czegoś nowego.
+    </p>
+
+    <div class="search">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔎 Szukaj ciekawostki..."
+            aria-label="Szukaj ciekawostki"
+        >
+
+        <button onclick="searchFacts()">Szukaj</button>
+    </div>
+
+</section>
+
+<div class="container">
+
+<script>
+  atOptions = {
+    'key' : '77602010591627924ecfaca1398cf458',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highrevenueformat.com/77602010591627924ecfaca1398cf458/invoke.js"></script>
+    <div class="ad">
+        <span>REKLAMA</span>
+    </div>
+
+    <section id="ciekawostki">
+
+        <div class="categories">
+
+            <button class="category active" onclick="filterCategory('Wszystkie', this)">
+                Wszystkie
+            </button>
+
+            <button class="category" onclick="filterCategory('Nauka', this)">
+                🔬 Nauka
+            </button>
+
+            <button class="category" onclick="filterCategory('Kosmos', this)">
+                🚀 Kosmos
+            </button>
+
+            <button class="category" onclick="filterCategory('Zwierzęta', this)">
+                🐘 Zwierzęta
+            </button>
+
+            <button class="category" onclick="filterCategory('Historia', this)">
+                🏛️ Historia
+            </button>
+
+            <button class="category" onclick="filterCategory('Geografia', this)">
+                🌎 Geografia
+            </button>
+
+            <button class="category" onclick="filterCategory('Człowiek', this)">
+                🧠 Człowiek
+            </button>
+
+        </div>
+
+        <div class="layout">
+
+            <main>
+
+                <div class="articles" id="articles">
+
+                    <article class="card" data-category="Kosmos">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🚀 Kosmos</span>
+
+                            <h2>Rok na Wenus trwa dłużej niż jej dzień</h2>
+<p><a class="read-more" href="wenus-dzien-i-rok.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Wenus obraca się wokół własnej osi niezwykle wolno.
+                            </p>
+
+                            <div class="fact">
+                                💡 Jeden obrót Wenus wokół osi trwa około 243 dni ziemskich,
+                                a okrążenie Słońca około 225 dni.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Zwierzęta">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🐘 Zwierzęta</span>
+
+                            <h2>Słonie potrafią rozpoznawać siebie w lustrze</h2>
+<p><a class="read-more" href="slonie-lustro-samoswiadomosc.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Słonie należą do niewielkiej grupy zwierząt wykazujących
+                                oznaki samoświadomości.
+                            </p>
+
+                            <div class="fact">
+                                💡 Eksperymenty z lustrem wykazały, że słonie mogą rozpoznawać
+                                swoje odbicie.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Nauka">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🔬 Nauka</span>
+
+                            <h2>Woda może jednocześnie występować w różnych stanach</h2>
+<p><a class="read-more" href="woda-punkt-potrojny.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                W odpowiednich warunkach temperatura i ciśnienie pozwalają
+                                wodzie występować w kilku fazach.
+                            </p>
+
+                            <div class="fact">
+                                💡 W punkcie potrójnym woda może znajdować się jednocześnie
+                                jako ciało stałe, ciecz i gaz.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Geografia">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🌎 Geografia</span>
+
+                            <h2>Rosja leży w jedenastu strefach czasowych</h2>
+<p><a class="read-more" href="rosja-strefy-czasowe.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                To państwo rozciąga się przez ogromną część Eurazji.
+                            </p>
+
+                            <div class="fact">
+                                💡 Rosja obejmuje aż 11 stref czasowych.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Historia">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🏛️ Historia</span>
+
+                            <h2>Uniwersytet Oksfordzki jest starszy od imperium Azteków</h2>
+<p><a class="read-more" href="oksford-aztekowie.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Historia niektórych europejskich uniwersytetów sięga bardzo
+                                daleko w przeszłość.
+                            </p>
+
+                            <div class="fact">
+                                💡 Nauczanie w Oksfordzie odbywało się już w XII wieku,
+                                podczas gdy imperium Azteków powstało wiele stuleci później.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Człowiek">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🧠 Człowiek</span>
+
+                            <h2>Ludzkie serce bije dziesiątki tysięcy razy dziennie</h2>
+<p><a class="read-more" href="ludzkie-serce-uderzenia.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Serce pracuje bez przerwy przez całe nasze życie.
+                            </p>
+
+                            <div class="fact">
+                                💡 Przy typowej częstości około 60–100 uderzeń na minutę
+                                serce wykonuje około 100 tysięcy uderzeń dziennie.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Zwierzęta">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🐙 Zwierzęta</span>
+
+                            <h2>Ośmiornice mają trzy serca</h2>
+<p><a class="read-more" href="osmiornice-trzy-serca.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Te niezwykłe zwierzęta posiadają bardzo nietypowy układ
+                                krążenia.
+                            </p>
+
+                            <div class="fact">
+                                💡 Dwa serca pompują krew do skrzeli, a trzecie do reszty ciała.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Kosmos">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🌌 Kosmos</span>
+
+                            <h2>Na Marsie znajduje się ogromny wulkan</h2>
+<p><a class="read-more" href="olympus-mons.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Olympus Mons jest największym znanym wulkanem w Układzie
+                                Słonecznym.
+                            </p>
+
+                            <div class="fact">
+                                💡 Olympus Mons ma około 22 km wysokości względem otaczających
+                                równin.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Geografia">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🌊 Geografia</span>
+
+                            <h2>Ocean Spokojny jest większy niż wszystkie kontynenty razem</h2>
+<p><a class="read-more" href="ocean-spokojny.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Pacyfik zajmuje ogromną część powierzchni naszej planety.
+                            </p>
+
+                            <div class="fact">
+                                💡 Ocean Spokojny jest największym oceanem na Ziemi.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Nauka">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🧪 Nauka</span>
+
+                            <h2>Banan jest naturalnie lekko radioaktywny</h2>
+<p><a class="read-more" href="banan-radioaktywnosc.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Banany zawierają potas, którego niewielka część występuje
+                                jako promieniotwórczy izotop potasu-40.
+                            </p>
+
+                            <div class="fact">
+                                💡 Ilość promieniowania jest bardzo mała i nie stanowi
+                                zagrożenia dla człowieka.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Historia">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🏺 Historia</span>
+
+                            <h2>Starożytni Egipcjanie używali makijażu</h2>
+<p><a class="read-more" href="makijaz-starozytny-egipt.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Kosmetyki były ważnym elementem życia codziennego
+                                starożytnych Egipcjan.
+                            </p>
+
+                            <div class="fact">
+                                💡 Używano między innymi charakterystycznego ciemnego
+                                kosmetyku do podkreślania oczu.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card" data-category="Człowiek">
+
+                        <div class="card-content">
+
+                            <span class="card-category">🧠 Człowiek</span>
+
+                            <h2>Mózg człowieka zużywa dużo energii</h2>
+<p><a class="read-more" href="mozg-energia.html">Czytaj całą ciekawostkę →</a></p>
+
+                            <p>
+                                Mimo stosunkowo niewielkiej masy mózg potrzebuje dużej
+                                ilości energii do prawidłowego działania.
+                            </p>
+
+                            <div class="fact">
+                                💡 U dorosłego człowieka mózg odpowiada za około 20% zużycia
+                                energii organizmu w spoczynku.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="no-results" id="noResults">
+
+                    <h2>😕 Nic nie znaleziono</h2>
+
+                    <p>
+                        Spróbuj wpisać inną frazę lub wybierz inną kategorię.
+                    </p>
+
+                </div>
+
+            </main>
+
+
+            <aside class="sidebar">
+
+                <!-- MIEJSCE NA REKLAMĘ -->
+
+                <div class="ad">
+                    <span>REKLAMA</span>
+                </div>
+
+
+                <div class="sidebar-box">
+
+                    <h3>🔥 Najpopularniejsze</h3>
+
+                    <ul>
+
+                        <li>🌍 Najdziwniejsze miejsca na Ziemi</li>
+                        <li>🚀 Ciekawostki o kosmosie</li>
+                        <li>🐙 Niezwykłe zwierzęta</li>
+                        <li>🧠 Tajemnice ludzkiego mózgu</li>
+                        <li>🏛️ Najciekawsze fakty historyczne</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="sidebar-box">
+
+                    <h3>💡 Czy wiesz, że...</h3>
+
+                    <p>
+                        Każdego dnia na naszej planecie dzieją się rzeczy,
+                        o których większość ludzi nigdy nie słyszała.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Wracaj regularnie po kolejne ciekawostki!
+                    </p>
+
+                </div>
+
+
+                <!-- MIEJSCE NA REKLAMĘ -->
+
+                <div class="ad">
+                    <span>REKLAMA</span>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+    
+<!--<!-- REKLAMA KOMPUTER / TELEFON -->
+
+<div class="responsive-ad desktop-ad">
+
+    <script>
+      atOptions = {
+        'key' : 'f9bd09ccc657c755f56fe968e3819b42',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/f9bd09ccc657c755f56fe968e3819b42/invoke.js"></script>
+
+</div>
+
+
+<div class="responsive-ad mobile-ad">
+
+    <script>
+      atOptions = {
+        'key' : '16f6c9f8731f0628d6fa425ccca9fcc3',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/16f6c9f8731f0628d6fa425ccca9fcc3/invoke.js"></script>
+
+</div>
+        <h2>🌍 Ciekawostki Świata</h2>
+
+        <p>
+            Ciekawostki, fakty i niezwykłe informacje z całego świata.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#ciekawostki">Ciekawostki</a>
+            <a href="#o-nas">O stronie</a>
+
+        </div>
+
+        <p style="margin-top:25px; font-size:13px;">
+            © 2026 Ciekawostki Świata. Wszystkie prawa zastrzeżone.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+let currentCategory = "Wszystkie";
+
+function filterCategory(category, button) {
+
+    currentCategory = category;
+
+    document.querySelectorAll(".category").forEach(function(btn) {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    filterArticles();
+}
+
+
+function searchFacts() {
+
+    filterArticles();
+
+}
+
+
+function filterArticles() {
+
+    const searchInput =
+        document.getElementById("searchInput").value.toLowerCase().trim();
+
+    const cards =
+        document.querySelectorAll(".card");
+
+    let visible = 0;
+
+    cards.forEach(function(card) {
+
+        const category =
+            card.getAttribute("data-category");
+
+        const text =
+            card.innerText.toLowerCase();
+
+        const matchesCategory =
+            currentCategory === "Wszystkie" ||
+            category === currentCategory;
+
+        const matchesSearch =
+            searchInput === "" ||
+            text.includes(searchInput);
+
+        if (matchesCategory && matchesSearch) {
+
+            card.style.display = "";
+
+            visible++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    const noResults =
+        document.getElementById("noResults");
+
+    if (visible === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+document
+    .getElementById("searchInput")
+    .addEventListener("keyup", function(event) {
+
+        if (event.key === "Enter") {
+            searchFacts();
+        }
+
+    });
+
+</script>
+
+</body>
+                                </html>
