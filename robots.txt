@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jacobeq3.github.io/ciekawostki-swiata/sitemap.xml
