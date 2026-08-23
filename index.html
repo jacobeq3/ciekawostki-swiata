@@ -463,6 +463,90 @@
             color: var(--primary);
         }
 
+        /* ==========================================
+           NOWA SEKCJA: PARTNERZY OFERTY (LEADSTAR)
+           ========================================== */
+        .partners-section {
+            max-width: 1280px;
+            margin: 60px auto 20px;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 35px rgba(0,0,0,.05);
+            border: 1px solid var(--border);
+        }
+
+        .partners-section h2 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .partners-section > p {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .partner-card {
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,.06);
+            border-color: var(--primary);
+        }
+
+        .partner-logo-area {
+            font-weight: 800;
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: var(--dark);
+        }
+
+        .partner-card p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .partner-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .partner-btn:hover {
+            background: var(--primary-dark);
+        }
+
         /* FOOTER */
         footer {
             margin-top: 60px;
@@ -514,8 +598,8 @@
         <div class="logo">🌍 Ciekawostki Świata & Partnerzy</div>
         <nav>
             <a href="#ciekawostki">Ciekawostki</a>
+            <a href="#partnerzy">Partnerzy</a>
             <a href="#wyszukiwarka">Usługi LeadStar</a>
-            <a href="#kontakt">O projekcie</a>
         </nav>
     </div>
 </header>
@@ -706,12 +790,60 @@
     </div>
 </div>
 
+<!-- ==========================================
+     DODANA SEKCJA: PARTNERZY OFERTY (LEADSTAR)
+     ========================================== -->
+<section class="partners-section" id="partnerzy">
+    <h2>Wyróżnieni Partnerzy i Oferty</h2>
+    <p>Sprawdź sprawdzone marki i platformy z sieci LeadStar dopasowane do tematyki naszego serwisu.</p>
+    
+    <div class="partners-grid">
+        
+        <!-- Partner 1: Podróże -->
+        <div class="partner-card">
+            <div>
+                <div class="partner-logo-area">✈️ Podróże i Loty</div>
+                <p>Planujesz podróż śladami niezwykłych miejsc? Znajdź tanie bilety lotnicze i noclegi na całym świecie.</p>
+            </div>
+            <a href="https://www.leadstar.pl/link/TWOJ_ID_PARTNER_PODROZE" target="_blank" rel="nofollow sponsored" class="partner-btn">Sprawdź oferty</a>
+        </div>
+
+        <!-- Partner 2: Finanse -->
+        <div class="partner-card">
+            <div>
+                <div class="partner-logo-area">💳 Finanse i Banki</div>
+                <p>Zarządzaj swoimi środkami, porównuj konta osobiste, lokaty oraz bezpieczne produkty finansowe.</p>
+            </div>
+            <a href="https://www.leadstar.pl/link/TWOJ_ID_PARTNER_FINANSE" target="_blank" rel="nofollow sponsored" class="partner-btn">Porównaj finanse</a>
+        </div>
+
+        <!-- Partner 3: Technologia -->
+        <div class="partner-card">
+            <div>
+                <div class="partner-logo-area">💻 Nowe Technologie</div>
+                <p>Odkrywaj najnowszy sprzęt elektroniczny, smartfony, gadżety oraz superszybki internet.</p>
+            </div>
+            <a href="https://www.leadstar.pl/link/TWOJ_ID_PARTNER_TECH" target="_blank" rel="nofollow sponsored" class="partner-btn">Zobacz elektronikę</a>
+        </div>
+
+        <!-- Partner 4: Edukacja -->
+        <div class="partner-card">
+            <div>
+                <div class="partner-logo-area">📚 Wiedza i Kursy</div>
+                <p>Poszerzaj horyzonty, ucz się języków, programowania i nowych umiejętności zawodowych online.</p>
+            </div>
+            <a href="https://www.leadstar.pl/link/TWOJ_ID_PARTNER_EDUKACJA" target="_blank" rel="nofollow sponsored" class="partner-btn">Rozpocznij naukę</a>
+        </div>
+
+    </div>
+</section>
+
 <footer>
     <h2>Ciekawostki Świata & Partnerzy</h2>
     <p>Odkrywaj z nami najciekawsze zakątki globu, finanse i technologię w najlepszych cenach.</p>
     <div class="footer-links">
         <a href="#">Polityka Prywatności</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#partnerzy">Partnerzy</a>
         <a href="#">Regulamin afiliacji LeadStar</a>
     </div>
 </footer>
@@ -775,4 +907,4 @@
 </script>
 
 </body>
-                            </html>
+</html>
