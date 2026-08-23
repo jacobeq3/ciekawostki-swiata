@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ciekawostki Świata – Niezwykłe fakty, podróże i loty</title>
-    <meta name="description" content="Ciekawostki Świata – niezwykłe fakty, ciekawostki o krajach, kosmosie, zwierzętach, historii, nauce oraz propozycje tanich lotów i noclegów.">
-    <meta name="keywords" content="ciekawostki, ciekawostki świata, fakty, podróże, tanie loty, bilety lotnicze, hotele, kosmos, historia, nauka">
+    <title>Ciekawostki Świata – Niezwykłe fakty, podróże i tanie loty</title>
+    <meta name="description" content="Odkryj niezwykłe ciekawostki ze świata, unikalne miejsca historyczne i zaplanuj podróż życia. Najlepsze okazje na loty, hotele i ubezpieczenia podróżne.">
+    <meta name="keywords" content="ciekawostki świata, fakty, podróże, tanie loty, hotele, ubezpieczenia turystyczne, leadstar, afiliacja podróżnicza">
     <meta name="author" content="Ciekawostki Świata">
     <meta name="google-site-verification" content="fKAecf8rGr3G6OqnsmXW1k76B77rRi1lW2pHFu8_VXM">
     <meta name="google-adsense-account" content="ca-pub-4722225390825613">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="https://jacobeq3.github.io/ciekawostki-swiata/">
     
-    <!-- Open Graph / Twitter -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ciekawostki Świata – Niezwykłe fakty i tanie podróże">
-    <meta property="og:description" content="Poznaj niezwykłe fakty o świecie, kosmosie, historii i znajdź najtańsze loty oraz noclegi w te miejsca!">
+    <meta property="og:description" content="Poznaj niezwykłe fakty o świecie i zarezerwuj podróż marzeń w najlepszych cenach!">
     <meta property="og:url" content="https://jacobeq3.github.io/ciekawostki-swiata/">
-    <meta name="twitter:card" content="summary">
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4722225390825613" crossorigin="anonymous"></script>
 
     <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --accent: #0ea5e9;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+            --success: #16a34a;
+            --warning: #ea580c;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -35,135 +45,129 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #17202a;
-            line-height: 1.6;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
         }
 
         /* HEADER */
         header {
-            background: linear-gradient(135deg, #111827, #2563eb);
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
             color: white;
-            padding: 20px 5%;
+            padding: 18px 5%;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 3px 15px rgba(0,0,0,.15);
+            box-shadow: 0 4px 20px rgba(0,0,0,.15);
         }
 
         .nav {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
-            white-space: nowrap;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         nav {
             display: flex;
-            gap: 20px;
+            gap: 24px;
         }
 
         nav a {
-            color: white;
+            color: #cbd5e1;
             text-decoration: none;
             font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: white;
         }
 
         /* HERO */
         .hero {
-            max-width: 1200px;
-            margin: 35px auto;
-            padding: 50px 25px;
+            max-width: 1280px;
+            margin: 30px auto;
+            padding: 60px 20px;
             background: white;
-            border-radius: 20px;
+            border-radius: 24px;
             text-align: center;
-            box-shadow: 0 8px 30px rgba(0,0,0,.07);
+            box-shadow: 0 10px 35px rgba(0,0,0,.05);
+            border: 1px solid var(--border);
         }
 
         .hero h1 {
-            font-size: clamp(34px, 6vw, 52px);
-            margin-bottom: 15px;
+            font-size: clamp(32px, 5vw, 48px);
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+            color: var(--dark);
         }
 
         .hero p {
-            color: #64748b;
-            max-width: 750px;
+            color: var(--gray);
+            max-width: 720px;
             margin: auto;
-            font-size: 18px;
+            font-size: 17px;
         }
 
-        /* SEARCH */
-        .search {
-            max-width: 650px;
-            margin: 28px auto 0;
+        /* SEARCH BAR */
+        .search-box {
+            max-width: 600px;
+            margin: 30px auto 0;
             display: flex;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,.03);
+            transition: border-color 0.2s;
         }
 
-        .search input {
+        .search-box:focus-within {
+            border-color: var(--primary);
+        }
+
+        .search-box input {
             flex: 1;
-            padding: 15px;
-            border: 1px solid #d1d5db;
-            border-radius: 10px 0 0 10px;
+            padding: 16px 20px;
+            border: none;
             font-size: 16px;
             outline: none;
+            color: var(--dark);
         }
 
-        .search input:focus {
-            border-color: #2563eb;
-        }
-
-        .search button {
-            padding: 15px 22px;
+        .search-box button {
+            padding: 0 28px;
             border: none;
-            background: #2563eb;
+            background: var(--primary);
             color: white;
-            border-radius: 0 10px 10px 0;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 700;
+            font-size: 15px;
             transition: background 0.2s;
         }
 
-        .search button:hover {
-            background: #1d4ed8;
+        .search-box button:hover {
+            background: var(--primary-dark);
         }
 
-        /* CONTAINER */
+        /* MAIN CONTAINER */
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 30px auto;
             padding: 0 20px;
-        }
-
-        /* REKLAMA */
-        .ad {
-            min-height: 100px;
-            border: 2px dashed #cbd5e1;
-            background: #e8edf3;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #64748b;
-            margin: 25px 0;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .ad span {
-            font-size: 13px;
         }
 
         /* CATEGORIES */
@@ -171,822 +175,541 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            justify-content: center;
         }
 
-        .category {
-            border: none;
-            padding: 10px 17px;
-            border-radius: 999px;
-            background: #e2e8f0;
+        .category-btn {
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 99px;
+            background: white;
             cursor: pointer;
             font-weight: 600;
-            transition: .2s;
+            font-size: 14px;
+            color: var(--gray);
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,.02);
         }
 
-        .category:hover,
-        .category.active {
-            background: #2563eb;
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--primary);
             color: white;
+            border-color: var(--primary);
         }
 
-        /* LAYOUT */
+        /* LAYOUT GRID */
         .layout {
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 25px;
+            grid-template-columns: 1fr 340px;
+            gap: 30px;
         }
 
-        /* ARTICLES */
         .articles {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 24px;
         }
 
+        /* CARD */
         .card {
             background: white;
-            border-radius: 16px;
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,.06);
-            transition: transform .2s, box-shadow .2s;
+            box-shadow: 0 4px 20px rgba(0,0,0,.04);
+            border: 1px solid var(--border);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0,0,0,.1);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.08);
         }
 
-        .card-content {
-            padding: 22px;
-            flex-grow: 1;
+        .card-body {
+            padding: 24px;
         }
 
-        .card-category {
+        .badge {
             display: inline-block;
-            background: #dbeafe;
-            color: #1d4ed8;
-            padding: 5px 10px;
-            border-radius: 999px;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 12px;
+            border-radius: 99px;
             font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 12px;
+            font-weight: 700;
+            margin-bottom: 14px;
         }
 
         .card h2 {
-            font-size: 21px;
-            margin-bottom: 10px;
-            line-height: 1.3;
+            font-size: 20px;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--dark);
         }
 
         .card p {
-            color: #64748b;
+            color: var(--gray);
             font-size: 15px;
+            margin-bottom: 16px;
         }
 
-        .fact {
-            margin-top: 15px;
-            padding: 12px;
-            background: #f1f5f9;
-            border-left: 4px solid #2563eb;
+        .highlight-fact {
+            padding: 14px;
+            background: #f8fafc;
+            border-left: 4px solid var(--primary);
             border-radius: 8px;
             font-weight: 600;
             font-size: 14px;
+            color: #334155;
+            margin-bottom: 16px;
         }
 
-        /* SEKACJA LEADS / AFILIACJA (PODRÓŻE & LOTY) */
-        .travel-affiliate-box {
+        /* PROFESSIONAL TRAVEL/LEADSTAR AFFILIATE BOX */
+        .travel-box {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
-            border-radius: 12px;
-            padding: 15px;
+            border-radius: 14px;
+            padding: 16px;
             margin-top: 15px;
         }
 
-        .travel-affiliate-box h4 {
-            font-size: 14px;
+        .travel-box h4 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             color: #166534;
+            margin-bottom: 10px;
             display: flex;
             align-items: center;
             gap: 6px;
-            margin-bottom: 8px;
         }
 
-        .travel-links {
+        .travel-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-top: 10px;
         }
 
-        .travel-btn {
+        .aff-btn {
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             padding: 8px 12px;
             border-radius: 8px;
             font-size: 13px;
-            font-weight: bold;
+            font-weight: 700;
             text-decoration: none;
-            transition: all 0.2s ease;
+            transition: opacity 0.2s;
+            flex: 1;
+            min-width: 130px;
+            justify-content: center;
+            text-align: center;
         }
 
-        .btn-flight {
-            background: #0284c7;
-            color: white;
-        }
-        .btn-flight:hover {
-            background: #0369a1;
+        .aff-btn:hover {
+            opacity: 0.9;
         }
 
-        .btn-hotel {
-            background: #16a34a;
-            color: white;
-        }
-        .btn-hotel:hover {
-            background: #15803d;
-        }
+        .btn-flight { background: #0284c7; color: white; }
+        .btn-hotel { background: #16a34a; color: white; }
+        .btn-car { background: #ea580c; color: white; }
+        .btn-insurance { background: #7c3aed; color: white; }
 
-        .btn-car {
-            background: #ea580c;
-            color: white;
-        }
-        .btn-car:hover {
-            background: #c2410c;
-        }
-
-        /* WIDGET WYSZUKIWARKI W SIDEBARZE */
-        .search-widget {
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-            color: white;
-            border-radius: 16px;
-            padding: 22px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.1);
-        }
-
-        .search-widget h3 {
-            font-size: 18px;
-            margin-bottom: 8px;
-            color: #38bdf8;
-        }
-
-        .search-widget p {
-            font-size: 13px;
-            color: #94a3b8;
-            margin-bottom: 15px;
-        }
-
-        .search-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .search-form input, .search-form select {
-            width: 100%;
-            padding: 10px 12px;
-            border-radius: 8px;
-            border: 1px solid #334155;
-            background: #0f172a;
-            color: white;
+        .read-more-link {
+            display: inline-block;
+            margin-top: 14px;
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
             font-size: 14px;
         }
 
-        .search-form button {
-            background: #2563eb;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 13px;
-        }
-
-        .search-form button:hover {
-            background: #1d4ed8;
-        }
-
-        .affiliate-disclaimer {
-            font-size: 11px;
-            color: #94a3b8;
-            margin-top: 10px;
-            text-align: center;
+        .read-more-link:hover {
+            text-decoration: underline;
         }
 
         /* SIDEBAR */
         .sidebar {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 24px;
         }
 
-        .sidebar-box {
+        .widget {
             background: white;
-            padding: 22px;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.06);
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,.04);
+            border: 1px solid var(--border);
         }
 
-        .sidebar-box h3 {
-            margin-bottom: 12px;
+        .widget-dark {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            border: none;
+        }
+
+        .widget h3 {
             font-size: 18px;
+            margin-bottom: 12px;
+            color: var(--dark);
         }
 
-        .sidebar-box ul {
+        .widget-dark h3 {
+            color: #38bdf8;
+        }
+
+        .widget p {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 16px;
+        }
+
+        .widget-dark p {
+            color: #94a3b8;
+        }
+
+        /* SIDEBAR SEARCH FORM */
+        .flight-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .flight-form input, .flight-form select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #334155;
+            background: #1e293b;
+            color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .flight-form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        .flight-form button:hover {
+            background: var(--primary-dark);
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #64748b;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .widget ul {
             list-style: none;
         }
 
-        .sidebar-box li {
-            padding: 9px 0;
-            border-bottom: 1px solid #e5e7eb;
+        .widget li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
             font-size: 14px;
         }
 
-        .sidebar-box li:last-child {
+        .widget li:last-child {
             border-bottom: none;
         }
 
-        .sidebar-box a {
-            color: #1e293b;
+        .widget a {
+            color: var(--dark);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: color 0.2s;
         }
 
-        .sidebar-box a:hover {
-            color: #2563eb;
+        .widget a:hover {
+            color: var(--primary);
         }
 
-        /* BRAK WYNIKÓW */
-        .no-results {
-            background: white;
-            padding: 35px;
-            border-radius: 16px;
-            text-align: center;
-            display: none;
-            grid-column: 1 / -1;
-        }
-
-        .no-results h2 {
-            margin-bottom: 10px;
-        }
-
-        /* STOPKA */
+        /* FOOTER */
         footer {
             margin-top: 60px;
-            background: #111827;
-            color: #cbd5e1;
-            padding: 40px 20px;
-        }
-
-        .footer-inner {
-            max-width: 1200px;
-            margin: auto;
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .footer-inner h2 {
+        footer h2 {
             color: white;
+            font-size: 20px;
             margin-bottom: 10px;
         }
 
         .footer-links {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .footer-links a {
             color: #cbd5e1;
-            margin: 0 10px;
             text-decoration: none;
+            font-size: 14px;
         }
 
         .footer-links a:hover {
             color: white;
         }
 
-        .read-more {
-            display: inline-block;
-            margin-top: 12px;
-            color: #1d4ed8;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .read-more:hover {
-            text-decoration: underline;
-        }
-
         /* RESPONSIVE */
-        .mobile-ad {
-            display: none;
-            text-align: center;
-            margin: 25px 0;
-        }
-
-        .desktop-ad {
-            display: block;
-            text-align: center;
-            margin: 25px 0;
-        }
-
-        @media (max-width: 850px) {
+        @media(max-width: 900px) {
             .layout {
                 grid-template-columns: 1fr;
             }
-
-            .articles {
-                grid-template-columns: 1fr;
-            }
-
-            .sidebar {
-                order: 2;
-            }
-
             nav {
                 display: none;
             }
-
-            .logo {
-                margin: auto;
-            }
-
-            .hero {
-                margin: 20px 15px;
-                padding: 35px 20px;
-            }
-
-            .container {
-                padding: 0 15px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .desktop-ad {
-                display: none;
-            }
-
-            .mobile-ad {
-                display: block;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .search {
-                flex-direction: column;
-            }
-
-            .search input {
-                border-radius: 10px;
-                margin-bottom: 8px;
-            }
-
-            .search button {
-                border-radius: 10px;
-            }
-
-            .card h2 {
-                font-size: 18px;
-            }
-
-            .travel-links {
-                flex-direction: column;
-            }
-            .travel-btn {
-                justify-content: center;
-            }
         }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"Ciekawostki Świata",
-      "url":"https://jacobeq3.github.io/ciekawostki-swiata/",
-      "description":"Niezwykłe fakty i ciekawostki o świecie, nauce, kosmosie, historii, zwierzętach oraz oferty podróżnicze.",
-      "inLanguage":"pl-PL"
-    }
-    </script>
 </head>
-
 <body>
 
 <header>
     <div class="nav">
-        <div class="logo">🌍 Ciekawostki Świata</div>
-
+        <div class="logo">🌍 Ciekawostki Świata & Podróże</div>
         <nav>
             <a href="#ciekawostki">Ciekawostki</a>
-            <a href="#okazje-lotnicze">Okazje Lotnicze</a>
-            <a href="#o-nas">O stronie</a>
+            <a href="#wyszukiwarka">Rezerwacje</a>
+            <a href="#kontakt">O projekcie</a>
         </nav>
     </div>
 </header>
 
 <section class="hero">
-    <h1>🌍 Ciekawostki Świata & Podróże</h1>
-    <p>
-        Odkrywaj niezwykłe fakty o świecie, historii, nauce i kosmosie! Zfascynowało Cię jakieś miejsce? Sprawdź bezpośrednio pod ciekawostką tanie loty, hotele i atrakcje na miejscu.
-    </p>
-
-    <div class="search">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔎 Szukaj ciekawostki lub kraju..."
-            aria-label="Szukaj ciekawostki"
-        >
-        <button onclick="searchFacts()">Szukaj</button>
+    <h1>Odkrywaj świat i podróżuj mądrzej</h1>
+    <p>Poznaj fascynujące fakty o naszej planecie. Zaintrygowało Cię konkretne miejsce? Znajdź natychmiast najtańsze loty, hotele i zabezpiecz swoją podróż dzięki sprawdzonym partnerom!</p>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Szukaj ciekawostki, kraju lub miasta..." onkeyup="filterFacts()">
+        <button onclick="filterFacts()">Szukaj</button>
     </div>
 </section>
 
 <div class="container">
 
-    <!-- REKLAMA REVENUE -->
-    <script>
-      atOptions = {
-        'key' : '77602010591627924ecfaca1398cf458',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highrevenueformat.com/77602010591627924ecfaca1398cf458/invoke.js"></script>
-
-    <div class="ad ad-profitablerate" aria-label="Reklama">
-        <script async="async" data-cfasync="false" src="https://pl30974747.profitableratecpmnetwork.com/318463c87a80daa31beb4aef28cc24c1/invoke.js"></script>
-        <div id="container-318463c87a80daa31beb4aef28cc24c1"></div>
+    <!-- KATEGORIE -->
+    <div class="categories" id="ciekawostki">
+        <button class="category-btn active" onclick="filterCategory('Wszystkie', this)">Wszystkie</button>
+        <button class="category-btn" onclick="filterCategory('Podróże', this)">✈️ Podróże</button>
+        <button class="category-btn" onclick="filterCategory('Geografia', this)">🌎 Geografia</button>
+        <button class="category-btn" onclick="filterCategory('Historia', this)">🏛️ Historia</button>
+        <button class="category-btn" onclick="filterCategory('Kosmos', this)">🚀 Kosmos</button>
+        <button class="category-btn" onclick="filterCategory('Zwierzęta', this)">🐘 Zwierzęta</button>
+        <button class="category-btn" onclick="filterCategory('Nauka', this)">🔬 Nauka</button>
     </div>
 
-    <section id="ciekawostki">
-        <div class="categories">
-            <button class="category active" onclick="filterCategory('Wszystkie', this)">Wszystkie</button>
-            <button class="category" onclick="filterCategory('Podróże', this)">✈️ Podróże & Miejsca</button>
-            <button class="category" onclick="filterCategory('Geografia', this)">🌎 Geografia</button>
-            <button class="category" onclick="filterCategory('Historia', this)">🏛️ Historia</button>
-            <button class="category" onclick="filterCategory('Kosmos', this)">🚀 Kosmos</button>
-            <button class="category" onclick="filterCategory('Zwierzęta', this)">🐘 Zwierzęta</button>
-            <button class="category" onclick="filterCategory('Nauka', this)">🔬 Nauka</button>
-            <button class="category" onclick="filterCategory('Człowiek', this)">🧠 Człowiek</button>
-        </div>
+    <div class="layout">
+        
+        <!-- SEKCJA ARTYKUŁÓW -->
+        <main>
+            <div class="articles" id="articlesGrid">
 
-        <div class="layout">
-            <main>
-                <div class="articles" id="articles">
+                <!-- KARTA 1 -->
+                <article class="card" data-category="Geografia Podróże">
+                    <div class="card-body">
+                        <span class="badge">🌎 Geografia & Podróże</span>
+                        <h2>Rosja leży w jedenastu strefach czasowych</h2>
+                        <p>To państwo rozciąga się przez ogromną część Eurazji. Gdy na zachodzie ludzie jedzą śniadanie, na Dalekim Wschodzie idą spać.</p>
+                        <div class="highlight-fact">💡 Różnica czasu między skrajnymi punktami wynosi aż 11 godzin!</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
 
-                    <!-- CARD 1: GEOGRAFIA / ROSJA -->
-                    <article class="card" data-category="Geografia Podróże">
-                        <div class="card-content">
-                            <span class="card-category">🌎 Geografia & Podróże</span>
-                            <h2>Rosja leży w jedenastu strefach czasowych</h2>
-                            <p>To państwo rozciąga się przez ogromną część Eurazji, od Europy Wschodniej aż po Ocean Spokojny.</p>
-                            <div class="fact">
-                                💡 Gdy w Kaliningradzie ludzie jedzą śniadanie, na Kamczatce kładą się już spać!
-                            </div>
-                            <p><a class="read-more" href="rosja-strefy-czasowe.html">Czytaj całą ciekawostkę →</a></p>
-
-                            <!-- SEKCJA AFILIACYJNA / LEADSTAR -->
-                            <div class="travel-affiliate-box">
-                                <h4>✈️ Chcesz to zobaczyć na własne oczy?</h4>
-                                <p style="font-size:12px; color:#475569;">Odkryj wycieczki i bilety lotnicze w najdalsze zakątki świata:</p>
-                                <div class="travel-links">
-                                    <!-- Podmień LINK_LEADSTAR_ESKY na swój link z LeadStar dla eSky / LOT -->
-                                    <a href="https://www.esky.pl/?gclid=leadstar_affiliate" target="_blank" rel="nofollow sponsored" class="travel-btn btn-flight">✈️ Tanie Loty (eSky)</a>
-                                    <!-- Podmień LINK_LEADSTAR_BOOKING na swój DeepLink Booking z LeadStar -->
-                                    <a href="https://www.booking.com/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-hotel">🏨 Hotele i Noclegi</a>
-                                </div>
+                        <!-- KOMPLEKSOWY PANEL AFILIACYJNY LEADSTAR -->
+                        <div class="travel-box">
+                            <h4>✈️ Zaplanuj wyprawę w te rejony:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_ESKY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-flight">✈️ Tanie Loty</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_BOOKING" target="_blank" rel="nofollow sponsored" class="aff-btn btn-hotel">🏨 Noclegi</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE" target="_blank" rel="nofollow sponsored" class="aff-btn btn-insurance">🛡️ Ubezpieczenie</a>
                             </div>
                         </div>
-                    </article>
-
-                    <!-- CARD 2: HISTORIA / ANGLIA OKSFORD -->
-                    <article class="card" data-category="Historia Podróże">
-                        <div class="card-content">
-                            <span class="card-category">🏛️ Historia & Podróże</span>
-                            <h2>Uniwersytet Oksfordzki jest starszy od imperium Azteków</h2>
-                            <p>Nauczanie w Oksfordzie odbywało się już w 1096 roku. Gdy Aztekowie zakładali Tenochtitlan w 1325 r., Oksford miał ponad 200 lat!</p>
-                            <div class="fact">
-                                💡 To jedna z najstarszych i najbardziej urokliwych uczelni na świecie.
-                            </div>
-                            <p><a class="read-more" href="oksford-aztekowie.html">Czytaj całą ciekawostkę →</a></p>
-
-                            <!-- SEKCJA AFILIACYJNA -->
-                            <div class="travel-affiliate-box">
-                                <h4>🇬🇧 Zaplanuj weekend w Oksfordzie i Londynie:</h4>
-                                <div class="travel-links">
-                                    <a href="https://www.esky.pl/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-flight">✈️ Loty do Londynu od 79 zł</a>
-                                    <a href="https://www.booking.com/city/gb/oxford.html" target="_blank" rel="nofollow sponsored" class="travel-btn btn-hotel">🏨 Noclegi w Oksfordzie</a>
-                                    <a href="https://www.rentalcars.com/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-car">🚗 Wynajem Auta</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 3: HISTORIA / EGIPT -->
-                    <article class="card" data-category="Historia Podróże">
-                        <div class="card-content">
-                            <span class="card-category">🏺 Historia & Podróże</span>
-                            <h2>Starożytni Egipcjanie używali makijażu oka jako ochrony</h2>
-                            <p>Ciemny eyeliner (kohl) służył nie tylko do ozdoby, ale przede wszystkim chronił oczy przed słońcem i infekcjami nad Nilem.</p>
-                            <div class="fact">
-                                💡 Egipcjanie wierzyli także, że makijaż ma właściwości magiczne i chroni przed złymi duchami.
-                            </div>
-                            <p><a class="read-more" href="makijaz-starozytny-egipt.html">Czytaj całą ciekawostkę →</a></p>
-
-                            <!-- SEKCJA AFILIACYJNA -->
-                            <div class="travel-affiliate-box">
-                                <h4>🇪🇬 Wakacje w Kairze i przy Piramidach:</h4>
-                                <div class="travel-links">
-                                    <a href="https://www.esky.pl/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-flight">✈️ Czartery do Egiptu</a>
-                                    <a href="https://www.booking.com/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-hotel">🏨 Kurorty i Hotele</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 4: GEOGRAFIA / ANTARKTYDA / PUSTYNIA -->
-                    <article class="card" data-category="Geografia Podróże">
-                        <div class="card-content">
-                            <span class="card-category">❄️ Geografia & Podróże</span>
-                            <h2>Antarktyda jest największą pustynią na Ziemi</h2>
-                            <p>Pustynia to teren o bardzo niskich opadach rocznych. Wnętrze Antarktydy otrzymuje rocznie mniej niż 50 mm opadów!</p>
-                            <div class="fact">
-                                💡 To nie Sahara, a lodowa Antarktyda jest największą i najsuchszą pustynią świata.
-                            </div>
-                            <p><a class="read-more" href="antarktyda-najwieksza-pustynia.html">Czytaj całą ciekawostkę →</a></p>
-
-                            <!-- SEKCJA AFILIACYJNA -->
-                            <div class="travel-affiliate-box">
-                                <h4>🇦🇷 Podróż na koniec świata (Ushuaia / Patagonia):</h4>
-                                <div class="travel-links">
-                                    <a href="https://www.esky.pl/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-flight">✈️ Szukaj Lotów</a>
-                                    <a href="https://www.booking.com/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-hotel">🏨 Hotele na Południu</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 5: KOSMOS / WENUS -->
-                    <article class="card" data-category="Kosmos">
-                        <div class="card-content">
-                            <span class="card-category">🚀 Kosmos</span>
-                            <h2>Rok na Wenus trwa dłużej niż jej dzień</h2>
-                            <p>Wenus obraca się wokół własnej osi niezwykle wolno. Jeden obrót trwa 243 dni ziemskie, a okrążenie Słońca 225 dni.</p>
-                            <div class="fact">
-                                💡 Oznacza to, że na Wenus dzień jest dłuższy niż cały rok!
-                            </div>
-                            <p><a class="read-more" href="wenus-dzien-i-rok.html">Czytaj całą ciekawostkę →</a></p>
-                        </div>
-                    </article>
-
-                    <!-- CARD 6: ZWIERZĘTA / SŁONIE -->
-                    <article class="card" data-category="Zwierzęta Podróże">
-                        <div class="card-content">
-                            <span class="card-category">🐘 Zwierzęta & Podróże</span>
-                            <h2>Słonie potrafią rozpoznawać siebie w lustrze</h2>
-                            <p>Słonie należą do nielicznych zwierząt (jak delfiny czy szympansy) wykazujących samoświadomość.</p>
-                            <div class="fact">
-                                💡 Eksperymenty z lustrem potwierdziły, że słonie rozumią swoje odbicie.
-                            </div>
-                            <p><a class="read-more" href="slonie-lustro-samoswiadomosc.html">Czytaj całą ciekawostkę →</a></p>
-
-                            <div class="travel-affiliate-box">
-                                <h4>🐘 Chcesz zobaczyć słonie na Safari? (Kenia / Tajlandia):</h4>
-                                <div class="travel-links">
-                                    <a href="https://www.esky.pl/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-flight">✈️ Tanie Loty do Azji i Afryki</a>
-                                    <a href="https://www.booking.com/" target="_blank" rel="nofollow sponsored" class="travel-btn btn-hotel">🏨 Hotele i Eko-Resorty</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- CARD 7: NAUKA / WODA -->
-                    <article class="card" data-category="Nauka">
-                        <div class="card-content">
-                            <span class="card-category">🔬 Nauka</span>
-                            <h2>Woda może jednocześnie wrzeć i zamarzać</h2>
-                            <p>Zjawisko to nazywa się punktem potrójnym. W odpowiedniej temperaturze i ciśnieniu woda występuje jako gaz, ciecz i lód naraz.</p>
-                            <div class="fact">
-                                💡 Punkt potrójny dla czystej wody wynosi dokładnie 0,01°C i ciśnienie 611,65 Pa.
-                            </div>
-                            <p><a class="read-more" href="woda-punkt-potrojny.html">Czytaj całą ciekawostkę →</a></p>
-                        </div>
-                    </article>
-
-                    <!-- CARD 8: CZŁOWIEK / MOZG -->
-                    <article class="card" data-category="Człowiek">
-                        <div class="card-content">
-                            <span class="card-category">🧠 Człowiek</span>
-                            <h2>Mózg człowieka zużywa 20% całej energii</h2>
-                            <p>Mimo że mózg stanowi tylko około 2% masy całego ciała, pochłania aż jedną piątą tlenu i kalorie w stanie spoczynku.</p>
-                            <div class="fact">
-                                💡 Głównym paliwem dla Twojego mózgu jest glukoza.
-                            </div>
-                            <p><a class="read-more" href="mozg-energia.html">Czytaj całą ciekawostkę →</a></p>
-                        </div>
-                    </article>
-
-                </div>
-
-                <div class="no-results" id="noResults">
-                    <h2>😕 Nic nie znaleziono</h2>
-                    <p>Spróbuj wpisać inną frazę lub wybierz inną kategorię.</p>
-                </div>
-
-                <section style="margin:35px 0; background:white; padding:25px; border-radius:16px; box-shadow:0 5px 20px rgba(0,0,0,.06)">
-                    <h2 style="font-size:22px; margin-bottom:15px;">🆕 Nowe ciekawostki i poradniki</h2>
-                    <ul style="list-style-type:square; padding-left:20px; line-height:1.8;">
-                        <li><a href="antarktyda-najwieksza-pustynia.html" style="color:#2563eb; font-weight:bold; text-decoration:none;">Antarktyda jest największą pustynią na Ziemi</a></li>
-                        <li><a href="blyskawica-goretsza-od-slonca.html" style="color:#2563eb; font-weight:bold; text-decoration:none;">Błyskawica może być gorętsza od powierzchni Słońca</a></li>
-                        <li><a href="sahara-nie-najwieksza-pustynia.html" style="color:#2563eb; font-weight:bold; text-decoration:none;">Sahara nie jest największą pustynią na Ziemi</a></li>
-                        <li><a href="rekiny-starsze-od-drzew.html" style="color:#2563eb; font-weight:bold; text-decoration:none;">Rekiny pojawiły się na Ziemi wcześniej niż drzewa</a></li>
-                        <li><a href="saturn-moglby-plywac.html" style="color:#2563eb; font-weight:bold; text-decoration:none;">Czy Saturn mógłby unosić się na wodzie?</a></li>
-                    </ul>
-                </section>
-            </main>
-
-            <aside class="sidebar">
-
-                <!-- WIDGET MONETYZACYJNY / LEADSTAR SEARCH WIDGET -->
-                <div class="search-widget" id="okazje-lotnicze">
-                    <h3>✈️ Wyszukaj Tanie Loty i Hotele</h3>
-                    <p>Planujesz wyjazd? Znajdź najtańsze połączenia w sieci:</p>
-                    
-                    <form class="search-form" onsubmit="handleSearchFlight(event)">
-                        <input type="text" id="flightFrom" placeholder="Skąd? (np. Warszawa, Kraków)" required>
-                        <input type="text" id="flightTo" placeholder="Dokąd? (np. Rzym, Londyn, Tokio)" required>
-                        <select id="flightType">
-                            <option value="esky">Bilety Lotnicze (eSky)</option>
-                            <option value="booking">Hotele & Noclegi (Booking)</option>
-                            <option value="rentalcars">Wynajem Samochodu</option>
-                        </select>
-                        <button type="submit">🚀 Szukaj Najtańszych Oferty</button>
-                    </form>
-                    <div class="affiliate-disclaimer">
-                        *Wyszukiwanie przekieruje Cię do zweryfikowanych partnerów (LeadStar).
                     </div>
-                </div>
+                </article>
 
-                <!-- MIEJSCE NA REKLAMĘ BANEROWA -->
-                <div class="ad">
-                    <span>REKLAMA / AFILIACJA BANER</span>
-                </div>
+                <!-- KARTA 2 -->
+                <article class="card" data-category="Historia Podróże">
+                    <div class="card-body">
+                        <span class="badge">🏛️ Historia & Podróże</span>
+                        <h2>Uniwersytet Oksfordzki jest starszy od imperium Azteków</h2>
+                        <p>Nauczanie w Oksfordzie odbywało się już w 1096 roku. Gdy Aztekowie zakładali Tenochtitlan w 1325 r., uczelnia miała już ponad dwa wieki.</p>
+                        <div class="highlight-fact">💡 Prawdziwa mekka dla miłośników historii i architektury gotyckiej.</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
 
-                <div class="sidebar-box">
-                    <h3>🔥 Najpopularniejsze Miejsca</h3>
-                    <ul>
-                        <li><a href="#">🌍 Najdziwniejsze miasta świata</a></li>
-                        <li><a href="#">🚀 Kosmiczne podróże i astronomia</a></li>
-                        <li><a href="#">🏛️ Oksford, Rzym i starożytne zabytki</a></li>
-                        <li><a href="#">🐙 Niezwykłe zwierzęta morskie</a></li>
-                        <li><a href="#">🧠 Tajemnice ludzkiego mózgu</a></li>
-                    </ul>
-                </div>
+                        <div class="travel-box">
+                            <h4>🇬🇧 Zobacz Oksford i Londyn na własne oczy:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_ESKY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-flight">✈️ Loty do UK</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_BOOKING" target="_blank" rel="nofollow sponsored" class="aff-btn btn-hotel">🏨 Hotele w UK</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_AUTO" target="_blank" rel="nofollow sponsored" class="aff-btn btn-car">🚗 Wynajem Auta</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="sidebar-box">
-                    <h3>💡 Czy wiesz, że...</h3>
-                    <p>Rezerwując loty i hotele z wyprzedzeniem co najmniej 6 tygodni, możesz zaoszczędzić nawet do 40% wartości biletu!</p>
-                    <br>
-                    <p>Wracaj do nas regularnie po nowe ciekawostki i okazje podróżnicze.</p>
-                </div>
+                <!-- KARTA 3 -->
+                <article class="card" data-category="Kosmos">
+                    <div class="card-body">
+                        <span class="badge">🚀 Kosmos</span>
+                        <h2>Rok na Wenus trwa dłużej niż jej dzień</h2>
+                        <p>Wenus obraca się wokół własnej osi niezwykle wolno. Jeden pełny obrót zajmuje jej 243 dni ziemskie, a okrążenie Słońca tylko 225 dni.</p>
+                        <div class="highlight-fact">💡 Dzień na tej planecie trwa dłużej niż cały rok!</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
+                    </div>
+                </article>
 
-                <div class="ad">
-                    <span>REKLAMA</span>
-                </div>
+                <!-- KARTA 4 -->
+                <article class="card" data-category="Zwierzęta Podróże">
+                    <div class="card-body">
+                        <span class="badge">🐘 Zwierzęta & Podróże</span>
+                        <h2>Słonie potrafią rozpoznawać siebie w lustrze</h2>
+                        <p>Słonie to niezwykle inteligentne zwierzęta, które wykazują zaawansowaną samoświadomość, dorównując w tym delfinom i naczelnym.</p>
+                        <div class="highlight-fact">💡 Wybierz się na bezpieczne i etyczne safari do Afryki lub Azji.</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
 
-            </aside>
-        </div>
-    </section>
+                        <div class="travel-box">
+                            <h4>🌍 Wyrusz na Safari:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_ESKY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-flight">✈️ Loty Dalekobieżne</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE" target="_blank" rel="nofollow sponsored" class="aff-btn btn-insurance">🛡️ Polisa Podróżna</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- REKLAMA RESPONSYWNA -->
-    <div class="responsive-ad desktop-ad">
-        <script>
-          atOptions = {
-            'key' : 'f9bd09ccc657c755f56fe968e3819b42',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highrevenueformat.com/f9bd09ccc657c755f56fe968e3819b42/invoke.js"></script>
+            </div>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- WYSZUKIWARKA AFILIACYJNA W SIDEBARZE -->
+            <div class="widget widget-dark" id="wyszukiwarka">
+                <h3>✈️ Szybka Rezerwacja Usług</h3>
+                <p>Znajdź najlepsze oferty u zweryfikowanych partnerów:</p>
+                
+                <form class="flight-form" onsubmit="handleAffiliateRedirect(event)">
+                    <input type="text" id="fromCity" placeholder="Skąd wylot? (np. Warszawa)" required>
+                    <input type="text" id="toCity" placeholder="Dokąd? (np. Rzym, Paryż)" required>
+                    <select id="serviceType">
+                        <option value="esky">Bilety Lotnicze (eSky)</option>
+                        <option value="booking">Hotele i Noclegi (Booking)</option>
+                        <option value="insurance">Ubezpieczenie Turystyczne</option>
+                        <option value="car">Wynajem Samochodów</option>
+                    </select>
+                    <button type="submit">Przejdź do oferty 🚀</button>
+                </form>
+                <div class="disclaimer">*Korzystając z linków, wspierasz rozwój serwisu bez ponoszenia dodatkowych kosztów.</div>
+            </div>
+
+            <!-- POPULARNE KATEGORIE -->
+            <div class="widget">
+                <h3>🔥 Popularne kierunki</h3>
+                <ul>
+                    <li><a href="#">🇪🇬 Tajemnice Starożytnego Egiptu</a></li>
+                    <li><a href="#">🇮🇹 Rzym i antyczne zabytki</a></li>
+                    <li><a href="#">🧊 Antarktyda – największa pustynia</a></li>
+                    <li><a href="#">🚀 Niezwykłości Układu Słonecznego</a></li>
+                </ul>
+            </div>
+
+            <!-- PORADA DNIA -->
+            <div class="widget">
+                <h3>💡 Porada Podróżnika</h3>
+                <p>Rezerwując hotele z 6-tygodniowym wyprzedzeniem oraz wykupując ubezpieczenie online, zyskujesz nawet do 40% oszczędności na całym wyjeździe!</p>
+            </div>
+
+        </aside>
+
     </div>
-
-    <div class="responsive-ad mobile-ad">
-        <script>
-          atOptions = {
-            'key' : '16f6c9f8731f0628d6fa425ccca9fcc3',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-          };
-        </script>
-        <script src="https://www.highrevenueformat.com/16f6c9f8731f0628d6fa425ccca9fcc3/invoke.js"></script>
-    </div>
-
 </div>
 
 <footer>
-    <div class="footer-inner" id="o-nas">
-        <h2>🌍 Ciekawostki Świata</h2>
-        <p>Niezwykłe fakty, ciekawostki, nauka oraz pomoc w planowaniu tanich podróży po całym świecie.</p>
-
-        <div class="footer-links">
-            <a href="#ciekawostki">Ciekawostki</a>
-            <a href="#okazje-lotnicze">Okazje Lotnicze</a>
-            <a href="#o-nas">O stronie</a>
-        </div>
-
-        <p style="margin-top:25px; font-size:12px; color:#94a3b8;">
-            Strona zawiera linki partnerskie (afiliacyjne). Dzięki kliknięciom w linki i rezerwacji lotów/noclegów wspierasz rozwój serwisu bez ponoszenia żadnych dodatkowych kosztów.
-        </p>
-        <p style="margin-top:10px; font-size:13px;">
-            © 2026 Ciekawostki Świata. Wszystkie prawa zastrzeżone.
-        </p>
+    <h2>Ciekawostki Świata & Podróże</h2>
+    <p>Odkrywaj z nami najciekawsze zakątki globu i podróżuj w najlepszych cenach.</p>
+    <div class="footer-links">
+        <a href="#">Polityka Prywatności</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#">Regulamin afiliacji</a>
     </div>
 </footer>
 
 <script>
-let currentCategory = "Wszystkie";
+    // Skrypt dynamicznego filtrowania po kategorii
+    function filterCategory(category, buttonElement) {
+        const buttons = document.querySelectorAll('.category-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        buttonElement.classList.add('active');
 
-function filterCategory(category, button) {
-    currentCategory = category;
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+            if (category === 'Wszystkie' || categories.includes(category)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
 
-    document.querySelectorAll(".category").forEach(function(btn) {
-        btn.classList.remove("active");
-    });
+    // Skrypt wyszukiwarki tekstowej
+    function filterFacts() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
 
-    button.classList.add("active");
-    filterArticles();
-}
-
-function searchFacts() {
-    filterArticles();
-}
-
-function filterArticles() {
-    const searchInput = document.getElementById("searchInput").value.toLowerCase().trim();
-    const cards = document.querySelectorAll(".card");
-    let visible = 0;
-
-    cards.forEach(function(card) {
-        const category = card.getAttribute("data-category");
-        const text = card.innerText.toLowerCase();
-
-        const matchesCategory = (currentCategory === "Wszystkie") || category.includes(currentCategory);
-        const matchesSearch = (searchInput === "") || text.includes(searchInput);
-
-        if (matchesCategory && matchesSearch) {
-            card.style.display = "flex";
-            visible++;
-        } else {
-            card.style.display = "none";
+    // Obsługa przekierowania z formularza bocznego do programów LeadStar
+    function handleAffiliateRedirect(event) {
+        event.preventDefault();
+        const service = document.getElementById('serviceType').value;
+        const to = document.getElementById('toCity').value;
+        
+        // Tutaj podstawiasz swoje wygenerowane linki bezpośrednie (DeepLinki) z panelu LeadStar.pl
+        let targetUrl = "https://www.leadstar.pl/";
+        
+        if(service === 'esky') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_ESKY"; // Podmień na swój link LeadStar dla eSky
+        } else if(service === 'booking') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_BOOKING"; // Podmień na swój link LeadStar dla Booking
+        } else if(service === 'insurance') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE"; // Podmień na ubezpieczenia w LeadStar
+        } else if(service === 'car') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_AUTO"; // Podmień na wynajem aut w LeadStar
         }
-    });
 
-    const noResults = document.getElementById("noResults");
-    if (visible === 0) {
-        noResults.style.display = "block";
-    } else {
-        noResults.style.display = "none";
+        window.open(targetUrl, '_blank');
     }
-}
-
-document.getElementById("searchInput").addEventListener("keyup", function(event) {
-    if (event.key === "Enter") {
-        searchFacts();
-    }
-});
-
-/* WYSZUKIWARKA AFILIACYJNA przekierowująca na linki z LeadStar */
-function handleSearchFlight(e) {
-    e.preventDefault();
-    const destination = document.getElementById("flightTo").value;
-    const origin = document.getElementById("flightFrom").value;
-    const type = document.getElementById("flightType").value;
-
-    // Tutaj możesz wkleić swoje bezpośrednie linki afiliacyjne z LeadStar (np. eSky / Booking DeepLink)
-    let affiliateUrl = "https://www.esky.pl/";
-    
-    if (type === "booking") {
-        affiliateUrl = "https://www.booking.com/searchresults.html?ss=" + encodeURIComponent(destination);
-    } else if (type === "rentalcars") {
-        affiliateUrl = "https://www.rentalcars.com/";
-    } else {
-        affiliateUrl = "https://www.esky.pl/";
-    }
-
-    window.open(affiliateUrl, "_blank");
-}
 </script>
 
 </body>
