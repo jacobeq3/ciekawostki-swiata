@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciekawostki Świata – Niezwykłe fakty, podróże i tanie loty</title>
-    <meta name="description" content="Odkryj niezwykłe ciekawostki ze świata, unikalne miejsca historyczne i zaplanuj podróż życia. Najlepsze okazje na loty, hotele i ubezpieczenia podróżne.">
-    <meta name="keywords" content="ciekawostki świata, fakty, podróże, tanie loty, hotele, ubezpieczenia turystyczne, leadstar, afiliacja podróżnicza">
+    <title>Ciekawostki Świata – Niezwykłe fakty, podróże, finanse i technologia</title>
+    <meta name="description" content="Odkryj niezwykłe ciekawostki ze świata, technologię, psychologię i zaplanuj podróż życia. Najlepsze okazje, finanse, kursy i ubezpieczenia z LeadStar.">
+    <meta name="keywords" content="ciekawostki świata, fakty, podróże, finanse, kursy online, elektronika, ubezpieczenia turystyczne, leadstar, afiliacja">
     <meta name="author" content="Ciekawostki Świata">
     <meta name="google-site-verification" content="fKAecf8rGr3G6OqnsmXW1k76B77rRi1lW2pHFu8_VXM">
     <meta name="google-adsense-account" content="ca-pub-4722225390825613">
@@ -14,8 +14,8 @@
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Ciekawostki Świata – Niezwykłe fakty i tanie podróże">
-    <meta property="og:description" content="Poznaj niezwykłe fakty o świecie i zarezerwuj podróż marzeń w najlepszych cenach!">
+    <meta property="og:title" content="Ciekawostki Świata – Niezwykłe fakty, finanse i podróże">
+    <meta property="og:description" content="Poznaj fascynujące fakty o świecie i odkryj dopasowane oferty partnerskie z LeadStar!">
     <meta property="og:url" content="https://jacobeq3.github.io/ciekawostki-swiata/">
 
     <!-- Google AdSense -->
@@ -269,7 +269,7 @@
             margin-bottom: 16px;
         }
 
-        /* PROFESSIONAL TRAVEL/LEADSTAR AFFILIATE BOX */
+        /* PROFESSIONAL AFFILIATE BOX */
         .travel-box {
             background: #f0fdf4;
             border: 1px solid #bbf7d0;
@@ -277,6 +277,24 @@
             padding: 16px;
             margin-top: 15px;
         }
+
+        .travel-box.finanse {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+        }
+        .travel-box.finanse h4 { color: #1e40af; }
+
+        .travel-box.tech {
+            background: #faf5ff;
+            border-color: #e9d5ff;
+        }
+        .travel-box.tech h4 { color: #6b21a8; }
+
+        .travel-box.edukacja {
+            background: #fffbeb;
+            border-color: #fde68a;
+        }
+        .travel-box.edukacja h4 { color: #92400e; }
 
         .travel-box h4 {
             font-size: 13px;
@@ -319,6 +337,9 @@
         .btn-hotel { background: #16a34a; color: white; }
         .btn-car { background: #ea580c; color: white; }
         .btn-insurance { background: #7c3aed; color: white; }
+        .btn-finance { background: #2563eb; color: white; }
+        .btn-tech { background: #9333ea; color: white; }
+        .btn-edu { background: #d97706; color: white; }
 
         .read-more-link {
             display: inline-block;
@@ -490,21 +511,21 @@
 
 <header>
     <div class="nav">
-        <div class="logo">🌍 Ciekawostki Świata & Podróże</div>
+        <div class="logo">🌍 Ciekawostki Świata & Partnerzy</div>
         <nav>
             <a href="#ciekawostki">Ciekawostki</a>
-            <a href="#wyszukiwarka">Rezerwacje</a>
+            <a href="#wyszukiwarka">Usługi LeadStar</a>
             <a href="#kontakt">O projekcie</a>
         </nav>
     </div>
 </header>
 
 <section class="hero">
-    <h1>Odkrywaj świat i podróżuj mądrzej</h1>
-    <p>Poznaj fascynujące fakty o naszej planecie. Zaintrygowało Cię konkretne miejsce? Znajdź natychmiast najtańsze loty, hotele i zabezpiecz swoją podróż dzięki sprawdzonym partnerom!</p>
+    <h1>Odkrywaj świat, finanse i technologię mądrzej</h1>
+    <p>Poznaj fascynujące fakty z całego globu. Zaintrygował Cię temat? Znajdź natychmiast najlepsze oferty, konta bankowe, kursy i okazje podróżne u zweryfikowanych partnerów!</p>
     
     <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Szukaj ciekawostki, kraju lub miasta..." onkeyup="filterFacts()">
+        <input type="text" id="searchInput" placeholder="Szukaj ciekawostki, kategorii lub usługi..." onkeyup="filterFacts()">
         <button onclick="filterFacts()">Szukaj</button>
     </div>
 </section>
@@ -518,8 +539,9 @@
         <button class="category-btn" onclick="filterCategory('Geografia', this)">🌎 Geografia</button>
         <button class="category-btn" onclick="filterCategory('Historia', this)">🏛️ Historia</button>
         <button class="category-btn" onclick="filterCategory('Kosmos', this)">🚀 Kosmos</button>
-        <button class="category-btn" onclick="filterCategory('Zwierzęta', this)">🐘 Zwierzęta</button>
-        <button class="category-btn" onclick="filterCategory('Nauka', this)">🔬 Nauka</button>
+        <button class="category-btn" onclick="filterCategory('Finanse', this)">💰 Finanse</button>
+        <button class="category-btn" onclick="filterCategory('Technologia', this)">💻 Technologia</button>
+        <button class="category-btn" onclick="filterCategory('Edukacja', this)">📚 Edukacja</button>
     </div>
 
     <div class="layout">
@@ -537,7 +559,6 @@
                         <div class="highlight-fact">💡 Różnica czasu między skrajnymi punktami wynosi aż 11 godzin!</div>
                         <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
 
-                        <!-- KOMPLEKSOWY PANEL AFILIACYJNY LEADSTAR -->
                         <div class="travel-box">
                             <h4>✈️ Zaplanuj wyprawę w te rejony:</h4>
                             <div class="travel-grid">
@@ -570,6 +591,63 @@
                 </article>
 
                 <!-- KARTA 3 -->
+                <article class="card" data-category="Finanse">
+                    <div class="card-body">
+                        <span class="badge">💰 Finanse i Historia Pieniądza</span>
+                        <h2>Najdziwniejsza waluta świata – kamienne dyski Yap</h2>
+                        <p>Na mikronezyjskiej wyspie Yap mieszkańcy używali jako pieniędzy gigantycznych kamiennych monet o wadze ton. Niektóre były tak duże, że nikt ich nie przenosił – zmieniano tylko właściciela słownie!</p>
+                        <div class="highlight-fact">💡 Dzisiaj zarządzanie pieniędzmi jest proste: sprawdź darmowe konta i oszczędzaj mądrze.</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
+
+                        <div class="travel-box finanse">
+                            <h4>💳 Zapanuj nad swoimi finansami:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_BANKI" target="_blank" rel="nofollow sponsored" class="aff-btn btn-finance">🏦 Ranking Kont Bankowych</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_KREDYTY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-finance">📊 Porównaj Oferty Finansowe</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTA 4 -->
+                <article class="card" data-category="Technologia">
+                    <div class="card-body">
+                        <span class="badge">💻 Technologia i Kosmos</span>
+                        <h2>Pierwszy programista na świecie żył w XIX wieku</h2>
+                        <p>Ada Lovelace, córka Lorda Byrona, napisała pierwszy algorytm przeznaczony dla mechanicznego komputera Charlesa Babbage'a na długo przed wynalezieniem elektryczności.</p>
+                        <div class="highlight-fact">💡 Chcesz rozwijać pasję technologiczną? Sprawdź najnowszy sprzęt i usługi online.</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
+
+                        <div class="travel-box tech">
+                            <h4>⚡ Nowoczesny sprzęt i internet:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_ELEKTRONIKA" target="_blank" rel="nofollow sponsored" class="aff-btn btn-tech">📱 Sklepy z Elektroniką</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_INTERNET" target="_blank" rel="nofollow sponsored" class="aff-btn btn-tech">🌐 Światłowód i GSM</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTA 5 -->
+                <article class="card" data-category="Edukacja">
+                    <div class="card-body">
+                        <span class="badge">📚 Edukacja i Umysł</span>
+                        <h2>Ludzki mózg generuje w jeden dzień więcej impulsów niż wszystkie telefony świata</h2>
+                        <p>Zdolności adaptacyjne ludzkiego umysłu są fascynujące, a codzienna nauka nowych rzeczy stymuluje tworzenie nowych połączeń nerwowych.</p>
+                        <div class="highlight-fact">💡 Poszerzaj swoje horyzonty i zdobądź unikalne kompetencje zawodowe online.</div>
+                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
+
+                        <div class="travel-box edukacja">
+                            <h4>🎓 Rozwijaj się i zdobywaj wiedzę:</h4>
+                            <div class="travel-grid">
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_KURSY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-edu">💻 Kursy Online</a>
+                                <a href="https://www.leadstar.pl/link/TWOJ_ID_KSIARKI" target="_blank" rel="nofollow sponsored" class="aff-btn btn-edu">📖 Księgarnie Internetowe</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- KARTA 6 -->
                 <article class="card" data-category="Kosmos">
                     <div class="card-body">
                         <span class="badge">🚀 Kosmos</span>
@@ -577,25 +655,6 @@
                         <p>Wenus obraca się wokół własnej osi niezwykle wolno. Jeden pełny obrót zajmuje jej 243 dni ziemskie, a okrążenie Słońca tylko 225 dni.</p>
                         <div class="highlight-fact">💡 Dzień na tej planecie trwa dłużej niż cały rok!</div>
                         <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
-                    </div>
-                </article>
-
-                <!-- KARTA 4 -->
-                <article class="card" data-category="Zwierzęta Podróże">
-                    <div class="card-body">
-                        <span class="badge">🐘 Zwierzęta & Podróże</span>
-                        <h2>Słonie potrafią rozpoznawać siebie w lustrze</h2>
-                        <p>Słonie to niezwykle inteligentne zwierzęta, które wykazują zaawansowaną samoświadomość, dorównując w tym delfinom i naczelnym.</p>
-                        <div class="highlight-fact">💡 Wybierz się na bezpieczne i etyczne safari do Afryki lub Azji.</div>
-                        <a href="#" class="read-more-link">Czytaj pełny artykuł →</a>
-
-                        <div class="travel-box">
-                            <h4>🌍 Wyrusz na Safari:</h4>
-                            <div class="travel-grid">
-                                <a href="https://www.leadstar.pl/link/TWOJ_ID_ESKY" target="_blank" rel="nofollow sponsored" class="aff-btn btn-flight">✈️ Loty Dalekobieżne</a>
-                                <a href="https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE" target="_blank" rel="nofollow sponsored" class="aff-btn btn-insurance">🛡️ Polisa Podróżna</a>
-                            </div>
-                        </div>
                     </div>
                 </article>
 
@@ -607,38 +666,39 @@
             
             <!-- WYSZUKIWARKA AFILIACYJNA W SIDEBARZE -->
             <div class="widget widget-dark" id="wyszukiwarka">
-                <h3>✈️ Szybka Rezerwacja Usług</h3>
-                <p>Znajdź najlepsze oferty u zweryfikowanych partnerów:</p>
+                <h3>🚀 Szybka Nawigacja LeadStar</h3>
+                <p>Wybierz interesującą Cię kategorię i przejdź bezpośrednio do ofert partnerów:</p>
                 
                 <form class="flight-form" onsubmit="handleAffiliateRedirect(event)">
-                    <input type="text" id="fromCity" placeholder="Skąd wylot? (np. Warszawa)" required>
-                    <input type="text" id="toCity" placeholder="Dokąd? (np. Rzym, Paryż)" required>
+                    <input type="text" id="fromCity" placeholder="Szukana fraza / cel podróży..." required>
                     <select id="serviceType">
-                        <option value="esky">Bilety Lotnicze (eSky)</option>
+                        <option value="esky">Bilety Lotnicze (eSky / Podróże)</option>
                         <option value="booking">Hotele i Noclegi (Booking)</option>
-                        <option value="insurance">Ubezpieczenie Turystyczne</option>
-                        <option value="car">Wynajem Samochodów</option>
+                        <option value="banki">Konta Bankowe i Finanse</option>
+                        <option value="elektronika">Elektronika i Gadżety</option>
+                        <option value="kursy">Kursy Online i Edukacja</option>
+                        <option value="ubezpieczenie">Ubezpieczenia Turystyczne</option>
                     </select>
                     <button type="submit">Przejdź do oferty 🚀</button>
                 </form>
-                <div class="disclaimer">*Korzystając z linków, wspierasz rozwój serwisu bez ponoszenia dodatkowych kosztów.</div>
+                <div class="disclaimer">*Korzystając z linków partnerskich LeadStar, wspierasz rozwój serwisu bez żadnych kosztów.</div>
             </div>
 
             <!-- POPULARNE KATEGORIE -->
             <div class="widget">
-                <h3>🔥 Popularne kierunki</h3>
+                <h3>🔥 Popularne tematy</h3>
                 <ul>
                     <li><a href="#">🇪🇬 Tajemnice Starożytnego Egiptu</a></li>
-                    <li><a href="#">🇮🇹 Rzym i antyczne zabytki</a></li>
-                    <li><a href="#">🧊 Antarktyda – największa pustynia</a></li>
+                    <li><a href="#">💰 Jak mądrze oszczędzać w bankach</a></li>
+                    <li><a href="#">💻 Nowoczesna elektronika i gadżety</a></li>
                     <li><a href="#">🚀 Niezwykłości Układu Słonecznego</a></li>
                 </ul>
             </div>
 
             <!-- PORADA DNIA -->
             <div class="widget">
-                <h3>💡 Porada Podróżnika</h3>
-                <p>Rezerwując hotele z 6-tygodniowym wyprzedzeniem oraz wykupując ubezpieczenie online, zyskujesz nawet do 40% oszczędności na całym wyjeździe!</p>
+                <h3>💡 Porada Serwisu</h3>
+                <p>Połączenie ciekawej wiedzy z praktycznymi narzędziami i ofertami oszczędza Twój czas i pieniądze. Sprawdź rekomendowane linki pod artykułami!</p>
             </div>
 
         </aside>
@@ -647,12 +707,12 @@
 </div>
 
 <footer>
-    <h2>Ciekawostki Świata & Podróże</h2>
-    <p>Odkrywaj z nami najciekawsze zakątki globu i podróżuj w najlepszych cenach.</p>
+    <h2>Ciekawostki Świata & Partnerzy</h2>
+    <p>Odkrywaj z nami najciekawsze zakątki globu, finanse i technologię w najlepszych cenach.</p>
     <div class="footer-links">
         <a href="#">Polityka Prywatności</a>
         <a href="#kontakt">Kontakt</a>
-        <a href="#">Regulamin afiliacji</a>
+        <a href="#">Regulamin afiliacji LeadStar</a>
     </div>
 </footer>
 
@@ -693,19 +753,21 @@
     function handleAffiliateRedirect(event) {
         event.preventDefault();
         const service = document.getElementById('serviceType').value;
-        const to = document.getElementById('toCity').value;
         
-        // Tutaj podstawiasz swoje wygenerowane linki bezpośrednie (DeepLinki) z panelu LeadStar.pl
         let targetUrl = "https://www.leadstar.pl/";
         
         if(service === 'esky') {
-            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_ESKY"; // Podmień na swój link LeadStar dla eSky
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_ESKY";
         } else if(service === 'booking') {
-            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_BOOKING"; // Podmień na swój link LeadStar dla Booking
-        } else if(service === 'insurance') {
-            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE"; // Podmień na ubezpieczenia w LeadStar
-        } else if(service === 'car') {
-            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_AUTO"; // Podmień na wynajem aut w LeadStar
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_BOOKING";
+        } else if(service === 'banki') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_BANKI";
+        } else if(service === 'elektronika') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_ELEKTRONIKA";
+        } else if(service === 'kursy') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_KURSY";
+        } else if(service === 'ubezpieczenie') {
+            targetUrl = "https://www.leadstar.pl/link/TWOJ_ID_UBEZPIECZENIE";
         }
 
         window.open(targetUrl, '_blank');
@@ -713,4 +775,4 @@
 </script>
 
 </body>
-</html>
+                            </html>
